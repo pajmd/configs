@@ -1,0 +1,80 @@
+[global_config]
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      command = ""
+      directory = ""
+      parent = window0
+      profile = New Profile
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[NHS]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 053d01b2-e3ad-4c76-ae09-078966a2f784
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 1088:278
+      size = 1185, 998
+      title = NHS App
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 585
+      ratio = 0.495762711864
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 495
+      ratio = 0.498489425982
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 495
+      ratio = 0.498489425982
+      type = VPaned
+    [[[terminal3]]]
+      command = vue ui
+      directory = /home/pjmd/js_workspace/VueProjects/nhs-ui
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 053d01b2-e3ad-4c76-ae09-078966a2f784
+    [[[terminal4]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="source /home/pjmd/python_workspace/python-env/nhs-server-env/bin/activate"') -i'''
+      directory = /home/pjmd/python_workspace/PychramProjects/scrapy_nhs
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 4bbf7f35-0205-477f-95b3-fa097452ec3b
+    [[[terminal6]]]
+      command = '''bash --rcfile <(cat ${HOME}/.bashrc; echo 'export PROMPT_COMMAND="source /home/pjmd/python_workspace/python-env/scrapy-nhs-env/bin/activate"') -i'''
+      directory = /home/pjmd/python_workspace/PychramProjects/nhs-server
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 53e832e3-39a3-4032-a361-0a143e9c8ad5
+    [[[terminal7]]]
+      command = ls -l ; exec bash
+      order = 1
+      parent = child5
+      profile = nhs-app
+      type = Terminal
+      uuid = 45962669-5376-44bc-b0fe-c6a1f6d79d98
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+  [[nhs-app]]
+    cursor_color = "#aaaaaa"
